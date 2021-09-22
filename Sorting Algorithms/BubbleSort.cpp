@@ -4,12 +4,16 @@
 //
 //  Created by Alex Lin on 2021/9/21.
 //
+
 #include <iostream>
+
 using namespace std;
+
 void BubbleSort(int arr[], int n);
 void InverseBubbleSort(int arr[], int n);
 void printArray(int arr[], int n);
 const int n = 8;
+
 int main()
 {
     int a[n] = {6,5,3,1,8,7,2,4};
