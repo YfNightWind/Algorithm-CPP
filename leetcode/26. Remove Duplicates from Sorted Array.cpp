@@ -48,6 +48,9 @@ int removeDuplicates(vector<int> &nums) {
         return nums.size();
     }
     int j = 0;
+    // 这里本质上j是一个新的数组，从第二个开始与i遍历的进行对比，如果小的话就加入到j这个数组里面去，最后返回该数组的大小
+    // j代表的是新数组的下标，返回他的数组长度就是j+1.
+    // 因为第一个肯定不会重复，所以是++j
     for (int i = 1; i < nums.size(); i++) {
         if (nums[j] < nums[i]) {
             nums[++j] = nums[i];
